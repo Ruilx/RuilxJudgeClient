@@ -35,13 +35,19 @@ void OutputHandle::receiveQuestionList(QList<QuestionBrief> questions)
 {
 	emit this->stdOut(tr("==========题目列表=========="));
 	emit this->stdOut(tr("服务器共有 %1 个题目").arg(questions.length()));
+	emit this->stdOut(tr("%1 %2 %3 %4 %5%").arg("问题ID", 6)
+					  .arg("标题", -41)
+					  .arg("题目通过数", 5)
+					  .arg("题目尝试数", 5)
+					  .arg("通过率", 5));
 	foreach(auto p, questions){
-		emit this->stdOut(tr("问题ID: %1").arg(p.questionId));
-		emit this->stdOut(tr("标题: %1").arg(p.title));
-		emit this->stdOut(tr("题目通过数: %1").arg(p.passNum));
-		emit this->stdOut(tr("题目尝试数: %1").arg(p.submitNum));
-		emit this->stdOut(tr("通过率: %1%").arg((100 * (double)p.passNum / (double)p.submitNum)));
-		emit this->stdOut("");
+//		emit this->stdOut(tr("问题ID: %1").arg(p.questionId));
+//		emit this->stdOut(tr("标题: %1").arg(p.title));
+//		emit this->stdOut(tr("题目通过数: %1").arg(p.passNum));
+//		emit this->stdOut(tr("题目尝试数: %1").arg(p.submitNum));
+//		emit this->stdOut(tr("通过率: %1%").arg((100 * (double)p.passNum / (double)p.submitNum)));
+//		emit this->stdOut("");
+		emit this->stdOut(tr("%1 %2 %3 %4 %5%").arg(p.questionId, 8).arg(p.title, -43).arg(p.passNum, 10).arg(p.submitNum, 10).arg((100 * (double)p.passNum / (double)p.submitNum), 8));
 	}
 	emit this->stdOut(tr("请通过question命令查看题目具体内容."));
 }
@@ -73,7 +79,7 @@ void OutputHandle::receiveJudge(JudgeResult judge)
 	emit this->stdOut(tr("判题序列号: %1").arg(judge.judgeId));
 	emit this->stdOut(tr("问题ID: %1").arg(judge.questionId));
 	emit this->stdOut(tr("判定结果: %1").arg(statusMap.value(judge.status, tr("未知"))));
-	emit this->stdOut(tr("判定时间: %1").arg(judge.judgeTime));
+	emit this->stdOut(tr("判定时间: %1").arg(QDateTime::fromTime_t(judge.judgeTime).toString(Qt::SystemLocaleLongDate)));
 	emit this->stdOut(tr("语言: %1").arg(languageMap.value(judge.language, tr("未知"))));
 	emit this->stdOut(tr("所用时间: %1").arg(judge.timeUsed));
 	emit this->stdOut(tr("所用内存: %1").arg(judge.memoryUsed));

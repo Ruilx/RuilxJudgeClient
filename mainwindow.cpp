@@ -2,15 +2,15 @@
 
 void MainWindow::keyPressEvent(QKeyEvent *e)
 {
-	Qt::Key key = static_cast<Qt::Key>(e->key());
-	Qt::KeyboardModifiers modKey = e->modifiers();
-	if((modKey == Qt::ControlModifier) && (key == Qt::Key_Enter)){
-		if(this->input->isEnabled() && this->send->isEnabled()){
-			this->sendClicked();
-		}
-	}
+//	Qt::Key key = static_cast<Qt::Key>(e->key());
+//	Qt::KeyboardModifiers modKey = e->modifiers();
+//	if((modKey == Qt::ControlModifier) && (key == Qt::Key_Enter)){
+//		if(this->input->isEnabled() && this->send->isEnabled()){
+//			this->sendClicked();
+//		}
+//	}
 
-	QWidget::keyPressEvent(e);
+//	QWidget::keyPressEvent(e);
 }
 
 void MainWindow::closeEvent(QCloseEvent *)
@@ -32,6 +32,7 @@ MainWindow::MainWindow(QWidget *parent)
 	this->resize(800, 600);
 	this->output = new QTextEdit(this);
 	this->output->setReadOnly(true);
+	this->output->setWordWrapMode(QTextOption::NoWrap);
 	this->input = new QLineEdit(this);
 	this->input->setEnabled(false);
 
@@ -55,6 +56,7 @@ MainWindow::MainWindow(QWidget *parent)
 
 	this->inputHandle = new InputHandle(this);
 	connect(this->inputHandle, SIGNAL(stdOut(QString)), this, SLOT(showStdOut(QString)));
+	connect(this->input, SIGNAL(returnPressed()), this, SLOT(sendClicked()));
 
 	this->outputHandle = new OutputHandle(this);
 	connect(this->outputHandle, SIGNAL(stdOut(QString)), this, SLOT(showStdOut(QString)));
@@ -143,6 +145,8 @@ void MainWindow::disableInputPanel()
 
 void MainWindow::showStdOut(QString msg)
 {
-	QString message = "[" + QTime::currentTime().toString("hh:mm:ss.zzz") + "]" + msg;
-	this->output->append(message);
+	QStringList msgList = msg.split("\n");
+	foreach(QString mmsg, msgList){
+		this->output->append("[" + QTime::currentTime().toString("hh:mm:ss.zzz") + "]" + mmsg);
+	}
 }
