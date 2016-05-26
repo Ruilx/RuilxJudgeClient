@@ -1,0 +1,15 @@
+INPUT(
+./release/main.o
+./release/mainwindow.o
+./release/network.o
+./release/networkcommunication.o
+./release/config.o
+./release/inputhandle.o
+./release/outputhandle.o
+./release/moc_mainwindow.o
+./release/moc_network.o
+./release/moc_networkcommunication.o
+./release/moc_config.o
+./release/moc_inputhandle.o
+./release/moc_outputhandle.o
+);

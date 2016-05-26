@@ -1,0 +1,15 @@
+INPUT(
+./debug/main.o
+./debug/mainwindow.o
+./debug/network.o
+./debug/networkcommunication.o
+./debug/config.o
+./debug/inputhandle.o
+./debug/outputhandle.o
+./debug/moc_mainwindow.o
+./debug/moc_network.o
+./debug/moc_networkcommunication.o
+./debug/moc_config.o
+./debug/moc_inputhandle.o
+./debug/moc_outputhandle.o
+);

@@ -1,0 +1,76 @@
+[WARNI]kernel\qlayout.cpp(133)QLayout::QLayout(QLayoutPrivate&, QLayout*, QWidget*):QLayout: Attempting to add QLayout "" to MainWindow "", which already has a layout
+[INFOR]mainwindow.cpp(78)void MainWindow::startSystem():Config: network port: 23333
+[INFOR]mainwindow.cpp(88)void MainWindow::startSystem():Config: network port: 23333
+[INFOR]mainwindow.cpp(92)void MainWindow::startSystem():connect to server...
+[DEBUG]com/network.cpp(11)Network::Network(QString, int, QObject*):Client started.
+[INFOR]com/network.cpp(34)bool Network::doConnect():Server connected. "127.0.0.1" : 23333
+[INFOR]mainwindow.cpp(102)void MainWindow::startSystem():Starting network communication server.
+[INFOR]mainwindow.cpp(107)void MainWindow::startSystem():Maybe all ready server had been checking successfully!
+[WARNI]socket\qabstractsocket.cpp(2272)virtual bool QAbstractSocket::waitForDisconnected(int):QAbstractSocket::waitForDisconnected() is not allowed in UnconnectedState
+[WARNI]com/network.cpp(44)bool Network::doDisconnect():Server disconnect failed. "127.0.0.1" : 23333
+[INFOR]mainwindow.cpp(78)void MainWindow::startSystem():Config: network port: 23333
+[INFOR]mainwindow.cpp(88)void MainWindow::startSystem():Config: network port: 23333
+[INFOR]mainwindow.cpp(92)void MainWindow::startSystem():connect to server...
+[DEBUG]com/network.cpp(11)Network::Network(QString, int, QObject*):Client started.
+[WARNI]com/network.cpp(30)bool Network::doConnect():Server connected failed. "127.0.0.1" : 23333
+[CRTCL]mainwindow.cpp(97)void MainWindow::startSystem():Network error, network start failed.
+[WARNI]socket\qabstractsocket.cpp(2272)virtual bool QAbstractSocket::waitForDisconnected(int):QAbstractSocket::waitForDisconnected() is not allowed in UnconnectedState
+[WARNI]com/network.cpp(44)bool Network::doDisconnect():Server disconnect failed. "127.0.0.1" : 23333
+[INFOR]mainwindow.cpp(78)void MainWindow::startSystem():Config: network port: 23333
+[INFOR]mainwindow.cpp(88)void MainWindow::startSystem():Config: network port: 23333
+[INFOR]mainwindow.cpp(92)void MainWindow::startSystem():connect to server...
+[DEBUG]com/network.cpp(11)Network::Network(QString, int, QObject*):Client started.
+[INFOR]com/network.cpp(34)bool Network::doConnect():Server connected. "127.0.0.1" : 23333
+[INFOR]mainwindow.cpp(102)void MainWindow::startSystem():Starting network communication server.
+[INFOR]mainwindow.cpp(107)void MainWindow::startSystem():Maybe all ready server had been checking successfully!
+[WARNI]socket\qabstractsocket.cpp(2272)virtual bool QAbstractSocket::waitForDisconnected(int):QAbstractSocket::waitForDisconnected() is not allowed in UnconnectedState
+[WARNI]com/network.cpp(44)bool Network::doDisconnect():Server disconnect failed. "127.0.0.1" : 23333
+[INFOR]mainwindow.cpp(78)void MainWindow::startSystem():Config: network port: 23333
+[INFOR]mainwindow.cpp(88)void MainWindow::startSystem():Config: network port: 23333
+[INFOR]mainwindow.cpp(92)void MainWindow::startSystem():connect to server...
+[DEBUG]com/network.cpp(11)Network::Network(QString, int, QObject*):Client started.
+[INFOR]com/network.cpp(34)bool Network::doConnect():Server connected. "127.0.0.1" : 23333
+[INFOR]mainwindow.cpp(102)void MainWindow::startSystem():Starting network communication server.
+[INFOR]mainwindow.cpp(107)void MainWindow::startSystem():Maybe all ready server had been checking successfully!
+[INFOR]mainwindow.cpp(78)void MainWindow::startSystem():Config: network port: 23333
+[INFOR]mainwindow.cpp(88)void MainWindow::startSystem():Config: network port: 23333
+[INFOR]mainwindow.cpp(92)void MainWindow::startSystem():connect to server...
+[DEBUG]com/network.cpp(11)Network::Network(QString, int, QObject*):Client started.
+[INFOR]com/network.cpp(34)bool Network::doConnect():Server connected. "127.0.0.1" : 23333
+[INFOR]mainwindow.cpp(102)void MainWindow::startSystem():Starting network communication server.
+[INFOR]mainwindow.cpp(107)void MainWindow::startSystem():Maybe all ready server had been checking successfully!
+[INFOR]mainwindow.cpp(78)void MainWindow::startSystem():Config: network port: 23333
+[INFOR]mainwindow.cpp(88)void MainWindow::startSystem():Config: network port: 23333
+[INFOR]mainwindow.cpp(92)void MainWindow::startSystem():connect to server...
+[DEBUG]com/network.cpp(11)Network::Network(QString, int, QObject*):Client started.
+[INFOR]com/network.cpp(34)bool Network::doConnect():Server connected. "127.0.0.1" : 23333
+[INFOR]mainwindow.cpp(102)void MainWindow::startSystem():Starting network communication server.
+[INFOR]mainwindow.cpp(107)void MainWindow::startSystem():Maybe all ready server had been checking successfully!
+[INFOR]inputhandle.cpp(29)void InputHandle::inputProcessor(QString):User issued command: "list"
+[WARNI]socket\qabstractsocket.cpp(2272)virtual bool QAbstractSocket::waitForDisconnected(int):QAbstractSocket::waitForDisconnected() is not allowed in UnconnectedState
+[WARNI]com/network.cpp(44)bool Network::doDisconnect():Server disconnect failed. "127.0.0.1" : 23333
+[WARNI]socket\qabstractsocket.cpp(2272)virtual bool QAbstractSocket::waitForDisconnected(int):QAbstractSocket::waitForDisconnected() is not allowed in UnconnectedState
+[WARNI]com/network.cpp(44)bool Network::doDisconnect():Server disconnect failed. "127.0.0.1" : 23333
+[WARNI]socket\qabstractsocket.cpp(2272)virtual bool QAbstractSocket::waitForDisconnected(int):QAbstractSocket::waitForDisconnected() is not allowed in UnconnectedState
+[WARNI]com/network.cpp(44)bool Network::doDisconnect():Server disconnect failed. "127.0.0.1" : 23333
+[INFOR]mainwindow.cpp(78)void MainWindow::startSystem():Config: network port: 23333
+[INFOR]mainwindow.cpp(88)void MainWindow::startSystem():Config: network port: 23333
+[INFOR]mainwindow.cpp(92)void MainWindow::startSystem():connect to server...
+[DEBUG]com/network.cpp(11)Network::Network(QString, int, QObject*):Client started.
+[INFOR]com/network.cpp(34)bool Network::doConnect():Server connected. "127.0.0.1" : 23333
+[INFOR]mainwindow.cpp(102)void MainWindow::startSystem():Starting network communication server.
+[INFOR]mainwindow.cpp(107)void MainWindow::startSystem():Maybe all ready server had been checking successfully!
+[INFOR]inputhandle.cpp(29)void InputHandle::inputProcessor(QString):User issued command: "list"
+[WARNI]socket\qabstractsocket.cpp(2272)virtual bool QAbstractSocket::waitForDisconnected(int):QAbstractSocket::waitForDisconnected() is not allowed in UnconnectedState
+[WARNI]com/network.cpp(44)bool Network::doDisconnect():Server disconnect failed. "127.0.0.1" : 23333
+[INFOR]mainwindow.cpp(78)void MainWindow::startSystem():Config: network port: 23333
+[INFOR]mainwindow.cpp(88)void MainWindow::startSystem():Config: network port: 23333
+[INFOR]mainwindow.cpp(92)void MainWindow::startSystem():connect to server...
+[DEBUG]com/network.cpp(11)Network::Network(QString, int, QObject*):Client started.
+[INFOR]com/network.cpp(34)bool Network::doConnect():Server connected. "127.0.0.1" : 23333
+[INFOR]mainwindow.cpp(102)void MainWindow::startSystem():Starting network communication server.
+[INFOR]mainwindow.cpp(107)void MainWindow::startSystem():Maybe all ready server had been checking successfully!
+[INFOR]inputhandle.cpp(29)void InputHandle::inputProcessor(QString):User issued command: "list"
+[INFOR]inputhandle.cpp(29)void InputHandle::inputProcessor(QString):User issued command: "list"
+[WARNI]socket\qabstractsocket.cpp(2272)virtual bool QAbstractSocket::waitForDisconnected(int):QAbstractSocket::waitForDisconnected() is not allowed in UnconnectedState
+[WARNI]com/network.cpp(44)bool Network::doDisconnect():Server disconnect failed. "127.0.0.1" : 23333
